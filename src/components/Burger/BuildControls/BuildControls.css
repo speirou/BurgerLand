@@ -3,9 +3,9 @@
     flex-flow: column;
     align-items: center;
     margin: auto;
-    background-color: rgb(219, 195, 179);
+    background-color: rgb(58, 54, 54);
     padding: 10px 0;
-    width: 50%;
+    width: 100%;
     box-shadow: 0 2px 1px #ccc;
 }
 
@@ -14,12 +14,12 @@
     background-color: rgb(230, 92, 0);
     outline: none;
     cursor: pointer;
-    border: 1px solid #966909;
+    border: 1px solid #080601;
     color: #050402;
     font-family: inherit;
     font-size: 1.2em;
     padding: 15px 30px;
-    box-shadow: 2px 2px 2px #966909;
+    box-shadow: 2px 2px 2px #000000;
 }
 
 .OrderButton:hover, .OrderButton:active {
@@ -38,6 +38,19 @@
 .OrderButton:not(:disabled) {
     animation: enable 0.3s linear;
 }
+
+@media(min-width:700px) {
+    .BuildControls {
+        width: 50%;
+    }
+}
+
+@media(min-width: 500px) and (max-width:699px){
+    .BuildControls {
+        width: 70%;
+    }
+}
+
 
 @keyframes enable {
     0% {
